@@ -1,0 +1,105 @@
+.menubar{
+    position: sticky;
+    top: 80px;
+    background-color: #f2f2f2;
+    max-width: 200px;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 10px 10px;
+}
+
+.menu2 a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+    &:hover{
+        background: #EBEBEB;
+        border-radius: 50px;
+        padding: 5px;
+
+    }
+    &:active{
+        color: red;
+    }
+    & svg{
+        width: 20px;
+        height: 20px;
+    }
+}
+.menu a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    &:hover{
+        background: #EBEBEB;
+        border-radius: 50px;
+        padding: 5px;
+    }
+    &:active{
+        color: red;
+    }
+    & svg{
+        width: 20px;
+        height: 20px;
+    }
+    & span{
+        font-size: 10px;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width:768px) {
+    .menubar{
+        max-width: 150px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .menubar{
+        position: fixed;
+        max-width: 100%;
+        height: 10vh;
+        bottom: 0;
+        top: 90%;
+        left: 0;
+    }
+
+    .menu3{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        border-top: 1px solid #EBEBEB;
+    }
+    .menu3 a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:active{
+            color: red;
+        }
+        & svg{
+            width: 30px;
+            height: 30px;
+            color: black;
+        }
+        & span{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.shorts{
+    width: 100%;
+}
+.short{
+    max-width: 60%;
+    align-items: center;
+    justify-content: center;
+    & iframe{
+    }
+    &__social{
+        right: -50px;
+        bottom: 10px;
+        row-gap: 20px;
+        & svg{
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .short{
+        max-width: 80%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .short{
+        max-width: 100%;
+    }
+}
